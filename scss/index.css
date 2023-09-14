@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: #F6F6F6;
 }
 body #wrapper {
   width: 100%;
@@ -24,38 +25,160 @@ body #wrapper .localisation {
 body #wrapper .localisation i {
   margin-right: 25px;
 }
-body #wrapper .sub-header {
+body #wrapper .slogan {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+body #wrapper .slogan .sub-header {
   margin-left: 42px;
   margin-right: 42px;
 }
-body #wrapper .sub-header .title {
+body #wrapper .slogan .sub-header .title {
   font-size: 20px;
   text-align: center;
 }
-body #wrapper .sub-header .title h1 {
+body #wrapper .slogan .sub-header .title h1 {
   margin-bottom: 0;
   font-family: Roboto;
 }
-body #wrapper .sub-header .sub-title {
+body #wrapper .slogan .sub-header .sub-title {
   text-align: center;
-  font-size: 18px;
-  color: gray;
+  font-size: 14px;
+  font-family: Roboto;
   font-weight: lighter;
 }
-body #wrapper .sub-header .btn-explore {
+body #wrapper .slogan .sub-header .btn-explore {
   display: flex;
   justify-content: center;
 }
-body #wrapper .sub-header .btn-explore button {
+body #wrapper .slogan .sub-header .btn-explore .button {
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 150px;
   border: none;
-}
-body #wrapper .sub-header .btn-explore button a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+}
+body #wrapper .section-filters {
+  background: white;
+  font-family: Roboto;
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+body #wrapper .section-filters .filter-container {
+  margin-left: 20px;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+}
+body #wrapper .section-filters .filter-container .filters {
+  background: rgba(128, 128, 128, 0.168627451);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  border-radius: 12px;
+  height: 72px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: Roboto;
+  font-size: 16px;
+}
+body #wrapper .section-filters .filter-container .filters:not(:last-child) {
+  margin-bottom: 25px;
+}
+body #wrapper .section-filters .filter-container .filters .number {
+  position: absolute;
+  left: 8px;
+  background: #9356DC;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 12px;
+}
+body #wrapper .section-filters .filter-container .filters .icone {
+  margin-left: 50px;
+  color: gray;
+  font-size: 22px;
+}
+body #wrapper .section-filters .filter-container .filters .icone.last-one {
+  color: #9356DC;
+}
+body #wrapper .section-filters .filter-container .filters .filter-title {
+  margin-left: 35px;
+}
+body #wrapper .restaurant-section {
+  background: #EAEAEA;
+  width: 100%;
+}
+body #wrapper .restaurant-section .restaurant-title {
+  font-family: Roboto;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+body #wrapper .restaurant-section .card-container {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+body #wrapper .restaurant-section .card-container .card {
+  background: white;
+  border-radius: 20px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-img {
+  height: 202px;
+  position: relative;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-img .new {
+  position: absolute;
+  color: #139274;
+  border-radius: 5px;
+  top: 5px;
+  font-family: Roboto;
+  right: 10px;
+  background: #99E2d0;
+  padding: 5px;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name h3 {
+  margin-bottom: 0;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name .name_heart {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name .name_heart .heart {
+  position: absolute;
+  top: 70%;
+  font-size: 25px;
+  right: 10px;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name .restaurant-place {
+  font-weight: lighter;
+}
+body #wrapper .restaurant-section .card-container .card .restaurant-name .restaurant-place p {
+  margin-top: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */
