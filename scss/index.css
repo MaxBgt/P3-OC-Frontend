@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+body #wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+body #wrapper .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body #wrapper .localisation {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 10px;
+  background: #EAEAEA;
+  box-shadow: -4px -3px 1px 0px rgba(0, 0, 0, 0.25);
+}
+body #wrapper .localisation i {
+  margin-right: 25px;
+}
+body #wrapper .sub-header {
+  margin-left: 42px;
+  margin-right: 42px;
+}
+body #wrapper .sub-header .title {
+  font-size: 20px;
+  text-align: center;
+}
+body #wrapper .sub-header .title h1 {
+  margin-bottom: 0;
+  font-family: Roboto;
+}
+body #wrapper .sub-header .sub-title {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  font-weight: lighter;
+}
+body #wrapper .sub-header .btn-explore {
+  display: flex;
+  justify-content: center;
+}
+body #wrapper .sub-header .btn-explore button {
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 150px;
+  border: none;
+}
+body #wrapper .sub-header .btn-explore button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=index.css.map */
