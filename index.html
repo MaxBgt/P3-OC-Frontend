@@ -15,6 +15,9 @@
 </head>
 <body>
     <div id="wrapper">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
         <header>
             <div class="logo">
                 <img src="./assets/images/logo/ohmyfood@2x.svg" alt="">
@@ -35,21 +38,21 @@
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
                 <div class="btn-explore">
-                <a href="#" class="button">Explorez nos restaurants</a>
+                <a href="#restaurant" class="button">Explorez nos restaurants</a>
                 </div>
             </div>
         </section>
         <main>
             <section class="section-filters">
+                <h2 class="section-title">Fonctionnement</h2>
                 <div class="filter-container">
-                    <h2>Fonctionnement</h2>
                     <div class="filters"><span class="number">1</span><i class="fa-solid fa-mobile-screen-button icone"></i><span class="filter-title">Choisissez un restaurant</span></div>
                     <div class="filters"><span class="number">2</span><i class="fa-solid fa-list-ul icone"></i><span class="filter-title">Composez votre menu</span></div>
                     <div class="filters"><span class="number">3</span><i class="fa-solid fa-store icone last-one"></i><span class="filter-title">Dégustez au restaurant</span></div>
                 </div>
             </section>
-            <section class="restaurant-section">
-                <div class="restaurant-title">
+            <section class="restaurant-section" >
+                <div class="restaurant-title" id="restaurant">
                     <h2>Restaurants</h2>
                 </div>
                 <article class="card-container">
@@ -73,16 +76,16 @@
                 <article class="card-container">
                     <div class="card">
                         <div class="restaurant-img">
-                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
+                            <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
                             <p class="new">Nouveau</p>
                         </div>
                         <div class="restaurant-name">
                             <div class="name_heart">
-                                <h3>La palette du goût</h3>
+                                <h3>La note enchantée</h3>
                                 <i class="fa-regular fa-heart heart" tabindex="0"></i> 
                             </div>
                                 <div class="restaurant-place">
-                                <p>Ménilmontant</p>
+                                <p>Charonne</p>
                             </div>
                         </div>
                       
@@ -91,16 +94,16 @@
                 <article class="card-container">
                     <div class="card">
                         <div class="restaurant-img">
-                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
+                            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
                             <p class="new">Nouveau</p>
                         </div>
                         <div class="restaurant-name">
                             <div class="name_heart">
-                                <h3>La palette du goût</h3>
+                                <h3>À la française</h3>
                                 <i class="fa-regular fa-heart heart" tabindex="0"></i> 
                             </div>
                                 <div class="restaurant-place">
-                                <p>Ménilmontant</p>
+                                <p>Cité Rouge</p>
                             </div>
                         </div>
                       
@@ -109,23 +112,40 @@
                 <article class="card-container">
                     <div class="card">
                         <div class="restaurant-img">
-                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
+                            <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'une assiète de restaurant gastronomique" class="restaurant-img">
                             <p class="new">Nouveau</p>
                         </div>
                         <div class="restaurant-name">
                             <div class="name_heart">
-                                <h3>La palette du goût</h3>
+                                <h3>Le délice des sens</h3>
                                 <i class="fa-regular fa-heart heart" tabindex="0"></i> 
                             </div>
                                 <div class="restaurant-place">
-                                <p>Ménilmontant</p>
+                                <p>Folie-Méricourt</p>
                             </div>
                         </div>
-                      
                     </div>
                 </article>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <p class="logo-text">ohmyfood</p>
+                </div>
+                <div class="footer-list-container">
+                    <ul class="footer-list">
+                        <li class="footer-li"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
+                        <li class="footer-li">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Devenir Partenaire
+                        </li>
+                        <li class="footer-li">Mentions légales</li>
+                        <li class="footer-li">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
