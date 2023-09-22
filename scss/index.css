@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background: white;
 }
 body #wrapper {
@@ -30,12 +30,12 @@ body #wrapper #loader {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: -50px 0 0 -50px;
-  border: 16px solid #f3f3f3;
+  border: 10px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 10px solid #9356dc;
   animation: spin 2s linear infinite;
 }
 @keyframes spin {
@@ -65,8 +65,8 @@ body #wrapper .localisation {
   font-weight: bold;
   align-items: center;
   margin-top: 10px;
-  background: #bcbcbc;
-  box-shadow: -4px -3px 1px 0px rgba(0, 0, 0, 0.25);
+  background: #eaeaea;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 body #wrapper .localisation i {
   margin-right: 25px;
@@ -79,7 +79,7 @@ body #wrapper .localisation i {
 body #wrapper .slogan {
   padding-bottom: 50px;
   padding-top: 50px;
-  background: rgba(188, 188, 188, 0.3215686275);
+  background: #f6f6f6;
 }
 body #wrapper .slogan .sub-header {
   margin-left: 42px;
@@ -105,7 +105,7 @@ body #wrapper .slogan .sub-header .btn-explore {
 }
 body #wrapper .slogan .sub-header .btn-explore .button {
   padding: 15px;
-  background: linear-gradient(#ff00b9, #8a0073);
+  background: linear-gradient(#ad5fdc, #df6fdb);
   border-radius: 150px;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -114,44 +114,50 @@ body #wrapper .slogan .sub-header .btn-explore .button {
   font-size: 14px;
   font-family: Roboto;
   margin-top: 20px;
-  transition: box-shadow 0.5s, background 0.5s;
+  transition: box-shadow 0.5s, background 1s;
 }
 body #wrapper .slogan .sub-header .btn-explore .button:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-  background: linear-gradient(rgba(255, 0, 185, 0.5803921569), rgba(138, 0, 115, 0.831372549));
+  background: linear-gradient(#c97efc, #f0a1fc);
 }
 body #wrapper .section-filters {
-  background: white;
+  background: #ffffff;
   font-family: Roboto;
   padding-bottom: 70px;
   padding-top: 40px;
   width: 100%;
 }
-body #wrapper .section-filters .section-title {
+@media (min-width: 1024px) {
+  body #wrapper .section-filters .wrapper-filters {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+body #wrapper .section-filters .wrapper-filters .section-title {
   margin-left: 20px;
 }
 @media (min-width: 1024px) {
-  body #wrapper .section-filters .section-title {
-    margin-left: 50px;
+  body #wrapper .section-filters .wrapper-filters .section-title {
+    margin-bottom: 25px;
   }
 }
-body #wrapper .section-filters .filter-container {
+body #wrapper .section-filters .wrapper-filters .filter-container {
   margin-left: 20px;
   width: 92%;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1024px) {
-  body #wrapper .section-filters .filter-container {
-    width: 98%;
+  body #wrapper .section-filters .wrapper-filters .filter-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    width: 98%;
+    justify-content: space-between;
   }
 }
-body #wrapper .section-filters .filter-container .filters {
+body #wrapper .section-filters .wrapper-filters .filter-container .filters {
   background: rgba(128, 128, 128, 0.168627451);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
   border-radius: 12px;
   height: 72px;
@@ -163,17 +169,17 @@ body #wrapper .section-filters .filter-container .filters {
   font-size: 16px;
 }
 @media (min-width: 1024px) {
-  body #wrapper .section-filters .filter-container .filters {
+  body #wrapper .section-filters .wrapper-filters .filter-container .filters {
     width: 30%;
   }
 }
-body #wrapper .section-filters .filter-container .filters:not(:last-child) {
+body #wrapper .section-filters .wrapper-filters .filter-container .filters:not(:last-child) {
   margin-bottom: 25px;
 }
-body #wrapper .section-filters .filter-container .filters .number {
+body #wrapper .section-filters .wrapper-filters .filter-container .filters .number {
   position: absolute;
   left: 8px;
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -186,112 +192,164 @@ body #wrapper .section-filters .filter-container .filters .number {
   font-size: 12px;
 }
 @media (min-width: 1024px) {
-  body #wrapper .section-filters .filter-container .filters .number {
+  body #wrapper .section-filters .wrapper-filters .filter-container .filters .number {
     position: inherit;
     margin-left: -12px;
   }
 }
-body #wrapper .section-filters .filter-container .filters .icone {
+body #wrapper .section-filters .wrapper-filters .filter-container .filters .icone {
   margin-left: 50px;
   color: gray;
   font-size: 22px;
 }
-body #wrapper .section-filters .filter-container .filters .icone.last-one {
-  color: #9356DC;
+body #wrapper .section-filters .wrapper-filters .filter-container .filters .icone.last-one {
+  color: #9356dc;
 }
-body #wrapper .section-filters .filter-container .filters .filter-title {
+body #wrapper .section-filters .wrapper-filters .filter-container .filters .filter-title {
   margin-left: 35px;
 }
 body #wrapper .restaurant-section {
-  background: #EAEAEA;
+  background: #f6f6f6;
   width: 100%;
 }
 @media (min-width: 1024px) {
   body #wrapper .restaurant-section {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 }
-body #wrapper .restaurant-section .restaurant-title {
+@media (min-width: 1024px) {
+  body #wrapper .restaurant-section .wrapper-restaurant {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+body #wrapper .restaurant-section .wrapper-restaurant .restaurant-title {
   font-family: Roboto;
   padding-top: 50px;
   padding-left: 20px;
 }
-body #wrapper .restaurant-section .card-container {
-  margin-top: 5px;
+body #wrapper .restaurant-section .wrapper-restaurant .card-parent {
   margin-left: 20px;
 }
-body #wrapper .restaurant-section .card-container:last-child {
+@media (min-width: 1024px) {
+  body #wrapper .restaurant-section .wrapper-restaurant .card-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container {
+  margin-top: 5px;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container:last-child {
   padding-bottom: 50px;
 }
-body #wrapper .restaurant-section .card-container .card {
+@media (min-width: 1024px) {
+  body #wrapper .restaurant-section .wrapper-restaurant .card-container {
+    width: 48%;
+    margin-bottom: 70px;
+  }
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card {
   background: white;
   border-radius: 20px;
   border-radius: 20px;
   padding-bottom: 5px;
   margin-top: 15px;
   margin-right: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 1024px) {
-  body #wrapper .restaurant-section .card-container .card {
-    width: 33%;
-  }
-}
-body #wrapper .restaurant-section .card-container .card .restaurant-img {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-img {
   height: 202px;
   position: relative;
   width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-img .new {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-img .new {
   position: absolute;
   color: #139274;
   border-radius: 5px;
   top: 5px;
   font-family: Roboto;
   right: 10px;
-  background: #99E2d0;
+  background: #99e2d0;
   padding: 5px;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name {
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   margin-left: 10px;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name h3 {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name h3 {
   margin-bottom: 0;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name .name_heart {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: space-between;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name .name_heart .heart {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper {
+  position: relative;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-checkbox {
+  display: none;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-checkbox:checked + .heart-label .heart {
+  color: #9356dc;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label {
+  cursor: pointer;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label .heart,
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label .heart-border {
   position: absolute;
   top: 70%;
-  font-size: 25px;
   right: 10px;
+  font-size: 25px;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name .restaurant-place {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label .heart-border {
+  color: black;
+  z-index: 1;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label .heart {
+  color: transparent;
+  z-index: 2;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .name_heart .heart-wrapper .heart-label .heart:hover {
+  color: #9356dc;
+  transition: color 0.5s ease;
+}
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .restaurant-place {
   font-weight: lighter;
 }
-body #wrapper .restaurant-section .card-container .card .restaurant-name .restaurant-place p {
+body #wrapper .restaurant-section .wrapper-restaurant .card-container .card .restaurant-name .restaurant-place p {
   margin-top: 2px;
 }
 body #wrapper .footer {
   background: black;
   padding-left: 20px;
 }
-body #wrapper .footer .footer-container {
-  min-height: calc(100vh - 500px);
+@media (min-width: 1024px) {
+  body #wrapper .footer .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
 }
 body #wrapper .footer .footer-container .footer-logo {
   padding-top: 2px;
+}
+@media (min-width: 1024px) {
+  body #wrapper .footer .footer-container .footer-logo {
+    padding-right: 25px;
+  }
 }
 body #wrapper .footer .footer-container .footer-logo .logo-text {
   color: white;
@@ -305,6 +363,13 @@ body #wrapper .footer .footer-container .footer-list-container .footer-list {
   margin-top: 0;
   padding-left: 0;
 }
+@media (min-width: 1024px) {
+  body #wrapper .footer .footer-container .footer-list-container .footer-list {
+    display: flex;
+    gap: 30px;
+    margin-right: 16px;
+  }
+}
 body #wrapper .footer .footer-container .footer-list-container .footer-list .footer-li {
   color: white;
   list-style: none;
@@ -317,6 +382,4 @@ body #wrapper .footer .footer-container .footer-list-container .footer-list .foo
 body #wrapper .footer .footer-container .footer-list-container .footer-list .footer-li i {
   margin-right: 5px;
   font-size: 14px;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
