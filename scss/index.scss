@@ -403,66 +403,92 @@ body {
   #wrapper {
     max-width: 100vw;
     margin: 0 auto;
+    .img-base {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 300px;
+      margin-top: 13px;
+      @media (min-width: $breakpointpc) {
+        width: 100%;
+        height: 450px;
+      }
+    }
+    .img-1 {
+      background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+    .img-2 {
+      background-image: url("../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    .img-3 {
+      background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+    .img-4 {
+      background-image: url("../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
     .logo {
       position: relative;
+      padding-bottom: 13px;
+      @media (min-width: $breakpointpc) {
+        padding-bottom: 32px;
+      }
       .back-arrow {
         font-size: x-large;
         position: absolute;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
         left: 17px;
         cursor: pointer;
-      }
-    }
-    .img-container {
-      .main-restaurant-img {
-        position: relative;
-        width: 375px;
-        height: 275px;
-        margin-top: 13px;
-        object-fit: cover;
         @media (min-width: $breakpointpc) {
-          width: 100%;
-          height: 478px;
+          top: 30%;
         }
       }
+    }
+
+    .main-content-container {
+      margin-top: 220px;
+      background: #f6f6f6;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      @media (min-width: $breakpointpc) {
+        margin-top: 342px;
+        margin-left: 192px;
+        margin-right: 192px;
+      }
       .title-container {
-        position: absolute;
-        top: 40.5%;
-        background: #f6f6f6;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        width: 100%;
         display: flex;
         align-items: center;
-
+        justify-content: space-between;
         @media (min-width: $breakpointpc) {
-          width: 73%;
-          margin-left: 192px;
-          margin-right: 192px;
           justify-content: center;
-          top: 55%;
         }
 
         .title {
           font-family: $title-font;
-          margin-left: 20px;
           font-size: 28px;
+          padding-top: 32px;
+          padding-left: 17px;
         }
         .heart-border {
           margin-left: 10px;
           font-size: 21px;
+          padding-top: 32px;
+          padding-right: 32px;
           padding-left: 25px;
+          @media (min-width: $breakpointpc) {
+            font-size: 21px;
+          }
+        }
+        @media (min-width: $breakpointpc) {
+          padding-top: 51px;
         }
       }
     }
     .container-menu {
-      background: #f6f6f6;
       @media (min-width: $breakpointpc) {
-        margin-left: 192px;
-        margin-right: 192px;
-        padding-left: 157px;
-        padding-right: 157px;
+        margin-left: 210px;
+        margin-right: 210px;
+        margin-top: 40px;
       }
 
       .entrer-title {
@@ -491,6 +517,8 @@ body {
         .card-entrer {
           padding: 15px;
           font-family: $text-font;
+          border-radius: 15px;
+          box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
           h3 {
             margin: 0;
             font-size: 18px;

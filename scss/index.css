@@ -402,69 +402,104 @@ body #wrapper {
   max-width: 100vw;
   margin: 0 auto;
 }
+body #wrapper .img-base {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 13px;
+}
+@media (min-width: 1024px) {
+  body #wrapper .img-base {
+    width: 100%;
+    height: 450px;
+  }
+}
+body #wrapper .img-1 {
+  background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+body #wrapper .img-2 {
+  background-image: url("../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+body #wrapper .img-3 {
+  background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+body #wrapper .img-4 {
+  background-image: url("../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
 body #wrapper .logo {
   position: relative;
+  padding-bottom: 13px;
+}
+@media (min-width: 1024px) {
+  body #wrapper .logo {
+    padding-bottom: 32px;
+  }
 }
 body #wrapper .logo .back-arrow {
   font-size: x-large;
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   left: 17px;
   cursor: pointer;
 }
-body #wrapper .img-container .main-restaurant-img {
-  position: relative;
-  width: 375px;
-  height: 275px;
-  margin-top: 13px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 @media (min-width: 1024px) {
-  body #wrapper .img-container .main-restaurant-img {
-    width: 100%;
-    height: 478px;
+  body #wrapper .logo .back-arrow {
+    top: 30%;
   }
 }
-body #wrapper .img-container .title-container {
-  position: absolute;
-  top: 40.5%;
+body #wrapper .main-content-container {
+  margin-top: 220px;
   background: #f6f6f6;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  width: 100%;
-  display: flex;
-  align-items: center;
 }
 @media (min-width: 1024px) {
-  body #wrapper .img-container .title-container {
-    width: 73%;
+  body #wrapper .main-content-container {
+    margin-top: 342px;
     margin-left: 192px;
     margin-right: 192px;
-    justify-content: center;
-    top: 55%;
   }
 }
-body #wrapper .img-container .title-container .title {
-  font-family: Shrikhand;
-  margin-left: 20px;
-  font-size: 28px;
+body #wrapper .main-content-container .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-body #wrapper .img-container .title-container .heart-border {
+@media (min-width: 1024px) {
+  body #wrapper .main-content-container .title-container {
+    justify-content: center;
+  }
+}
+body #wrapper .main-content-container .title-container .title {
+  font-family: Shrikhand;
+  font-size: 28px;
+  padding-top: 32px;
+  padding-left: 17px;
+}
+body #wrapper .main-content-container .title-container .heart-border {
   margin-left: 10px;
   font-size: 21px;
+  padding-top: 32px;
+  padding-right: 32px;
   padding-left: 25px;
 }
-body #wrapper .container-menu {
-  background: #f6f6f6;
+@media (min-width: 1024px) {
+  body #wrapper .main-content-container .title-container .heart-border {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1024px) {
+  body #wrapper .main-content-container .title-container {
+    padding-top: 51px;
+  }
 }
 @media (min-width: 1024px) {
   body #wrapper .container-menu {
-    margin-left: 192px;
-    margin-right: 192px;
-    padding-left: 157px;
-    padding-right: 157px;
+    margin-left: 210px;
+    margin-right: 210px;
+    margin-top: 40px;
   }
 }
 body #wrapper .container-menu .entrer-title {
@@ -494,6 +529,8 @@ body #wrapper .container-menu .entrer-card-container {
 body #wrapper .container-menu .entrer-card-container .card-entrer {
   padding: 15px;
   font-family: Roboto;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 }
 body #wrapper .container-menu .entrer-card-container .card-entrer h3 {
   margin: 0;
