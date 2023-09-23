@@ -108,9 +108,10 @@ body #wrapper .slogan .sub-header .btn-explore {
 }
 body #wrapper .slogan .sub-header .btn-explore .button {
   padding: 15px;
-  text-align: center;
-  background: linear-gradient(#ad5fdc, #df6fdb);
+  background: linear-gradient(#9356dc, #ff79da);
   border-radius: 150px;
+  text-align: center;
+  width: 186px;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-decoration: none;
@@ -118,7 +119,9 @@ body #wrapper .slogan .sub-header .btn-explore .button {
   font-size: 14px;
   font-family: Roboto;
   margin-top: 20px;
+  margin-bottom: 40px;
   transition: box-shadow 0.5s, background 1s;
+  cursor: pointer;
 }
 body #wrapper .slogan .sub-header .btn-explore .button:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
@@ -526,6 +529,9 @@ body #wrapper .container-menu .entrer-card-container {
   border-radius: 15px;
   background: white;
 }
+body #wrapper .container-menu .entrer-card-container .last-one {
+  margin-bottom: 40px;
+}
 body #wrapper .container-menu .entrer-card-container .card-entrer {
   padding: 15px;
   font-family: Roboto;
@@ -554,7 +560,7 @@ body #wrapper .btn-explore {
 }
 body #wrapper .btn-explore .button {
   padding: 15px;
-  background: linear-gradient(#ad5fdc, #df6fdb);
+  background: linear-gradient(#9356dc, #ff79da);
   border-radius: 150px;
   width: 186px;
   border: none;
@@ -566,6 +572,7 @@ body #wrapper .btn-explore .button {
   margin-top: 20px;
   margin-bottom: 40px;
   transition: box-shadow 0.5s, background 1s;
+  cursor: pointer;
 }
 body #wrapper .btn-explore .button:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
