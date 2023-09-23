@@ -47,7 +47,7 @@ body {
       border: 10px solid #f3f3f3;
       border-radius: 50%;
       border-top: 10px solid $primary-color;
-      animation: spin 2s linear infinite;
+      animation: spin 2.5s linear infinite;
 
       @keyframes spin {
         0% {
@@ -390,6 +390,11 @@ body {
               list-style: none;
               font-size: 18px;
               font-family: $text-font;
+              a {
+                color: white;
+                font-family: $text-font;
+                font-size: 18px;
+              }
               &:not(:last-child) {
                 margin-bottom: 10px;
               }

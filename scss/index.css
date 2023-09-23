@@ -39,7 +39,7 @@ body #wrapper #loader {
   border: 10px solid #f3f3f3;
   border-radius: 50%;
   border-top: 10px solid #9356dc;
-  animation: spin 2s linear infinite;
+  animation: spin 2.5s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -393,6 +393,11 @@ body #wrapper .footer .footer-container .footer-list-container .footer-list .foo
   list-style: none;
   font-size: 18px;
   font-family: Roboto;
+}
+body #wrapper .footer .footer-container .footer-list-container .footer-list .footer-li a {
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
 }
 body #wrapper .footer .footer-container .footer-list-container .footer-list .footer-li:not(:last-child) {
   margin-bottom: 10px;
