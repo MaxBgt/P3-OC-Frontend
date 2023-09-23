@@ -510,6 +510,28 @@ body {
           margin-top: 5px;
         }
       }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(100px);
+        animation: fadeIn ease-out 1s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .group-enter.fade-in {
+        animation-delay: 0.8s;
+      }
+
+      .group-plat.fade-in {
+        animation-delay: 1s;
+      }
+
+      .group-dessert.fade-in {
+        animation-delay: 1.4s;
+      }
       .entrer-card-container {
         margin-top: 12px;
         margin-left: 13px;
@@ -517,23 +539,69 @@ body {
         margin-bottom: 12px;
         border-radius: 15px;
         background: white;
+
         .last-one {
           margin-bottom: 40px;
         }
         .card-entrer {
+          position: relative;
           padding: 15px;
           font-family: $text-font;
           border-radius: 15px;
           box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
-          h3 {
-            margin: 0;
-            font-size: 18px;
+          &:hover {
+            .checkmark {
+              width: 50px;
+              opacity: 1;
+            }
+            .price {
+              margin-right: 40px;
+            }
           }
-          p {
-            margin: 0;
-            margin-top: 10px;
-            font-size: 15px;
+
+          .checkmark {
+            position: absolute;
+            background-color: #99e2d0;
+            right: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: white;
+            opacity: 0;
+            transition: width 0.5s ease, opacity 0.5s ease;
+          }
+
+          .text-container {
+            width: 80%;
+            h3,
+            p {
+              margin: 0;
+            }
+
+            h3 {
+              font-size: 18px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 80%;
+            }
+
+            p {
+              margin-top: 10px;
+              font-size: 15px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 70%;
+            }
           }
 
           .price-and-desc {
@@ -542,6 +610,10 @@ body {
 
             .price {
               font-weight: bold;
+              display: flex;
+              font-size: 15px;
+              transition: margin-right 0.5s ease;
+              align-items: center;
             }
           }
         }
