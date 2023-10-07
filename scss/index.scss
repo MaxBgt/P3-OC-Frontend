@@ -433,8 +433,10 @@ body {
     .img-4 {
       background-image: url("../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     }
-    .logo-resto {
+    .logo {
+      border: none;
       position: relative;
+      display: flex;
       padding-bottom: 13px;
       @media (min-width: $breakpointpc) {
         padding-bottom: 32px;
