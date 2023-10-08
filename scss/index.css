@@ -622,8 +622,18 @@ body #wrapper .container-menu .entrer-card-container .card-entrer:hover .checkma
   width: 50px;
   opacity: 1;
 }
+@media (min-width: 820px) {
+  body #wrapper .container-menu .entrer-card-container .card-entrer:hover .checkmark {
+    width: 59px;
+  }
+}
 body #wrapper .container-menu .entrer-card-container .card-entrer:hover .price {
   margin-right: 40px;
+}
+@media (min-width: 820px) {
+  body #wrapper .container-menu .entrer-card-container .card-entrer:hover .price {
+    margin-right: 55px;
+  }
 }
 body #wrapper .container-menu .entrer-card-container .card-entrer .checkmark {
   position: absolute;
@@ -641,7 +651,7 @@ body #wrapper .container-menu .entrer-card-container .card-entrer .checkmark {
   transition: width 0.5s ease, opacity 0.5s ease;
 }
 body #wrapper .container-menu .entrer-card-container .card-entrer .text-container {
-  width: 80%;
+  width: 76%;
 }
 body #wrapper .container-menu .entrer-card-container .card-entrer .text-container h3,
 body #wrapper .container-menu .entrer-card-container .card-entrer .text-container p {

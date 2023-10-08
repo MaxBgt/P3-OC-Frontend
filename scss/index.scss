@@ -615,9 +615,15 @@ body {
             .checkmark {
               width: 50px;
               opacity: 1;
+              @media (min-width: $breakpointtablette) {
+                width: 59px;
+              }
             }
             .price {
               margin-right: 40px;
+              @media (min-width: $breakpointtablette) {
+                margin-right: 55px;
+              }
             }
           }
 
@@ -638,7 +644,7 @@ body {
           }
 
           .text-container {
-            width: 80%;
+            width: 76%;
             h3,
             p {
               margin: 0;
