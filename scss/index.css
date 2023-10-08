@@ -505,11 +505,16 @@ body #wrapper .main-content-container .title-container .heart-border {
     padding-top: 51px;
   }
 }
+body #wrapper .container-menu {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2rem;
+}
 @media (min-width: 1236px) {
   body #wrapper .container-menu {
-    margin-left: 210px;
-    margin-right: 210px;
-    margin-top: 40px;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 2rem;
   }
 }
 body #wrapper .container-menu .entrer-title {
