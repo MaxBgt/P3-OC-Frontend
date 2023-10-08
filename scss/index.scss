@@ -3,7 +3,8 @@ $secondary-color: #ff79da;
 $third-color: #99e2d0;
 $text-font: Roboto;
 $title-font: Shrikhand;
-$breakpointpc: 1236px;
+$breakpointpc: 1024px;
+$breakpointtablette: 820px;
 
 body {
   margin: 0 auto;
@@ -468,7 +469,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (min-width: $breakpointpc) {
+        @media (min-width: $breakpointtablette) {
           justify-content: center;
         }
 
@@ -478,14 +479,62 @@ body {
           padding-top: 32px;
           padding-left: 17px;
         }
-        .heart-border {
-          margin-left: 10px;
-          font-size: 21px;
-          padding-top: 32px;
-          padding-right: 32px;
-          padding-left: 25px;
-          @media (min-width: $breakpointpc) {
-            font-size: 21px;
+        .name_heart {
+          .heart-wrapper {
+            position: relative;
+            padding-bottom: 25px;
+
+            .heart-checkbox {
+              display: none;
+
+              &:checked + .heart-label .heart {
+                color: $primary-color;
+              }
+            }
+            .heart-label {
+              cursor: pointer;
+              .heart,
+              .heart-border {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                font-size: 25px;
+              }
+
+              .heart-border {
+                color: black;
+                z-index: 1;
+                position: absolute;
+                top: 57%;
+                right: 31px;
+                font-size: 25px;
+                @media (min-width: $breakpointtablette) {
+                  position: absolute;
+                  top: 57%;
+                  right: -53px;
+                  font-size: 25px;
+                }
+              }
+
+              .heart {
+                color: transparent;
+                z-index: 2;
+                position: absolute;
+                top: 57%;
+                right: 31px;
+                font-size: 25px;
+                &:hover {
+                  color: $primary-color;
+                  transition: color 0.5s ease;
+                }
+                @media (min-width: $breakpointtablette) {
+                  position: absolute;
+                  top: 57%;
+                  right: -53px;
+                  font-size: 25px;
+                }
+              }
+            }
           }
         }
         @media (min-width: $breakpointpc) {
